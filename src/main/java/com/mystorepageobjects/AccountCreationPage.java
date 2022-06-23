@@ -10,10 +10,10 @@ import com.mystore.base.BaseClass;
 public class AccountCreationPage extends BaseClass
 {
 	Action action=new Action();
-	@FindBy(xpath="//h1[text()='Create an account']")
-	WebElement formTitle;
 	
-	
+	@FindBy(xpath="//h1[text()='reate an account']")
+	private WebElement formTitle;
+		
 	public AccountCreationPage()
 	{
 		PageFactory.initElements(driver, this);

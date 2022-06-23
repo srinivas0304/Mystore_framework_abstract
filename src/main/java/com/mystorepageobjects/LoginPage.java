@@ -11,20 +11,21 @@ public class LoginPage extends BaseClass
 {
 
 	Action action=new Action();
+	
 	@FindBy(id = "email")
-	WebElement username;
+	private WebElement username;
 
 	@FindBy(name = "passwd")
-	WebElement password;
+	private WebElement password;
 
 	@FindBy(xpath = "//button[@id='SubmitLogin']")
-	WebElement signInBtn;
+	private WebElement signInBtn;
 
 	@FindBy(id = "email_create")
-	WebElement emailForNewAccount;
+	private WebElement emailForNewAccount;
 
 	@FindBy(xpath = "//i[@class='icon-user left']")
-	WebElement createNewAccountBtn;
+	private WebElement createNewAccountBtn;
 
 	public LoginPage() 
 	{

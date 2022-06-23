@@ -10,11 +10,12 @@ import com.mystore.base.BaseClass;
 public class HomePage extends BaseClass
 {
 	Action action=new Action();
+	
 	@FindBy(xpath="//li[@class='lnk_wishlist']//span")
-	WebElement myWishList;
+	private WebElement myWishList;
 	
 	@FindBy(xpath="//a[@title='Orders']//span")
-	WebElement orderHistory;
+	private WebElement orderHistory;
 	
 	public HomePage()
 	{

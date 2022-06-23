@@ -10,8 +10,9 @@ import com.mystore.base.BaseClass;
 public class OrderSummaryPage extends BaseClass
 {
 	Action action=new Action();
+	
 	@FindBy(xpath="//span[text()='I confirm my order']")
-	WebElement confirmOrderBtn;
+	private WebElement confirmOrderBtn;
 	
 	public OrderSummaryPage()
 	{

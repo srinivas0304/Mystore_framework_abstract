@@ -10,14 +10,15 @@ import com.mystore.base.BaseClass;
 public class PaymentPage extends BaseClass
 {
 	Action action=new Action();
+	
 	@FindBy(xpath="//a[contains(text(),'Pay by bank wire')]")
-	WebElement payByBankWire;
+	private WebElement payByBankWire;
 	
 	@FindBy(xpath="//a[contains(text(),'Pay by check')]")
-	WebElement payByCheck;
+	private WebElement payByCheck;
 	
 	@FindBy(xpath="//a[@class='home']")
-	WebElement scroll;
+	private WebElement scroll;
 	public PaymentPage()
 	{
 		PageFactory.initElements(driver, this);

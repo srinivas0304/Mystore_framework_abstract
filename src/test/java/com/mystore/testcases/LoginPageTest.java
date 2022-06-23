@@ -18,16 +18,6 @@ public class LoginPageTest extends BaseClass {
 	HomePage homePage;
 	AddressPage addressPage;
 
-	@BeforeMethod(groups = { "Smoke", "Sanity", "Regression" })
-	public void setup() {
-		launchBrowser();
-	}
-
-	@AfterMethod(groups = { "Smoke", "Sanity", "Regression" })
-	public void tearDown() {
-		driver.quit();
-	}
-
 	@Test(groups = { "Smoke", "Sanity" })
 	public void loginTest() throws Throwable {
 		indexPage = new IndexPage();

@@ -17,16 +17,6 @@ public class AddToCartTest extends BaseClass {
 	SearchResultPage searchResultPage;
 	AddToCartPage addToCart;
 
-	@BeforeMethod(groups = { "Smoke", "Sanity", "Regression" })
-	public void setup() {
-		launchBrowser();
-	}
-
-	@AfterMethod(groups = { "Smoke", "Sanity", "Regression" })
-	public void tearDown() {
-		driver.quit();
-	}
-
 	@Test(groups = { "Sanity", "Regression" })
 	public void addToCart() throws Exception {
 		indexPage = new IndexPage();

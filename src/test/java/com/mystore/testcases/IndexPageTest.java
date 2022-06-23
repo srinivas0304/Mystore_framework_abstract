@@ -12,16 +12,6 @@ import com.mystorepageobjects.IndexPage;
 public class IndexPageTest extends BaseClass {
 	IndexPage ip;
 
-	@BeforeMethod(groups = {"Smoke","Sanity","Regression"})
-	public void setup() {
-		launchBrowser();
-	}
-
-	@AfterMethod(groups = { "Smoke", "Sanity", "Regression" })
-	public void tearDown() {
-		driver.quit();
-	}
-
 	@Test(groups = "Smoke")
 	public void verifyLogo() {
 		ip = new IndexPage();

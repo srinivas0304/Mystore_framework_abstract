@@ -22,18 +22,6 @@ public class OrderPageTest extends BaseClass
 	AddToCartPage addToCart;
 	OrderPage orderPage;
 	
-	
-	@BeforeMethod(groups = {"Smoke","Sanity","Regression"})
-	public void setup()
-	{
-		launchBrowser();
-	}
-	
-	@AfterMethod(groups = {"Smoke","Sanity","Regression"})
-	public void tearDown()
-	{
-		driver.quit();
-	}
 	@Test(groups = "Regression")
 	public void verifyTotalPrice() throws Exception
 	{

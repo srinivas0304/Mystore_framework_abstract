@@ -12,13 +12,13 @@ public class OrderPage extends BaseClass
 	Action action=new Action();
 	
 	@FindBy(xpath = "//td[@class='cart_unit']/span/span")
-	WebElement unitPrice;
+	private WebElement unitPrice;
 
 	@FindBy(id = "total_price")
-	WebElement totalPrice;
+	private WebElement totalPrice;
 
 	@FindBy(xpath="(//a[@title='Proceed to checkout'])[2]")
-	WebElement proceedToCheckOutBtn;
+	private WebElement proceedToCheckOutBtn;
 
 	public OrderPage() 
 	{

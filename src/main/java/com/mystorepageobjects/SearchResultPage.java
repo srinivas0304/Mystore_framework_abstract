@@ -10,8 +10,9 @@ import com.mystore.base.BaseClass;
 public class SearchResultPage extends BaseClass
 {
 	Action action=new Action();
+	
 	@FindBy(xpath="//div[@class='product-image-container']//img[@title='Faded Short Sleeve T-shirts']")
-	WebElement productResult;
+	private WebElement productResult;
 	
 	public SearchResultPage()
 	{

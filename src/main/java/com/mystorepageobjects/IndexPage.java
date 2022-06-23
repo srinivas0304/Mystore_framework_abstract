@@ -10,17 +10,18 @@ import com.mystore.base.BaseClass;
 public class IndexPage extends BaseClass
 {
 	Action action=new Action();
+	
 	@FindBy(xpath="//a[contains(text(),'Sign in')]")
-	WebElement signInBtn;
+	private WebElement signInBtn;
 	
 	@FindBy(xpath="//img[@class='logo img-responsive']")
-	WebElement myStorelogo;
+	private WebElement myStorelogo;
 	
 	@FindBy(id="search_query_top")
-	WebElement searchBox;
+	private WebElement searchBox;
 	
 	@FindBy(xpath="//button[@name='submit_search']")
-	WebElement submitBtn;
+	private WebElement submitBtn;
 	
 	
 	public IndexPage()//constructor to initilization the values for above elements

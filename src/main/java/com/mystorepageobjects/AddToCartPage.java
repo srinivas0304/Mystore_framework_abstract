@@ -10,20 +10,21 @@ import com.mystore.base.BaseClass;
 public class AddToCartPage extends BaseClass
 {
 	Action action=new Action();
+	
 	@FindBy(id="quantity_wanted")
-	WebElement quantity;
+	private WebElement quantity;
 	
 	@FindBy(name="group_1")
-	WebElement size;
+	private WebElement size;
 	
 	@FindBy(xpath="//span[text()='Add to cart']")
-	WebElement addToCartBtn;
+	private WebElement addToCartBtn;
 	
 	@FindBy(xpath="//div[@class='layer_cart_product col-xs-12 col-md-6']//h2")
-	WebElement addToCartMessage;
+	private WebElement addToCartMessage;
 	
 	@FindBy(xpath="//span[contains(text(),'Proceed to checkout')]")
-	WebElement proceedToCheckOutBtn;
+	private WebElement proceedToCheckOutBtn;
 	
 	public AddToCartPage()
 	{

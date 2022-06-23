@@ -7,8 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.mystore.actiondriver.Action;
 import com.mystore.base.BaseClass;
 
-public class ShippingPage extends BaseClass
-{
+public class ShippingPage extends BaseClass {
 //	@FindBy(xpath="//input[@id='cgv']")
 //	WebElement checkBox;
 //	
@@ -35,24 +34,26 @@ public class ShippingPage extends BaseClass
 //		//checkOutBtn.click();
 //		return new PaymentPage();
 //	}
-	
-	@FindBy(id="cgv") WebElement checkBox;
-	@FindBy(xpath="//button/span[contains(text(),'Proceed to checkout')]") WebElement checkOutBtn;
-	@FindBy(xpath="(//div[@id='columns']//a/i)[1]") WebElement homeIcon;
-	public ShippingPage()
-	{
-	PageFactory.initElements(driver, this);
+
+	@FindBy(id = "cgv")
+	private WebElement checkBox;
+	@FindBy(xpath = "//button/span[contains(text(),'Proceed to checkout')]")
+	private WebElement checkOutBtn;
+	@FindBy(xpath = "(//div[@id='columns']//a/i)[1]")
+	private WebElement homeIcon;
+
+	public ShippingPage() {
+		PageFactory.initElements(driver, this);
 	}
-	public void clickOnCheckBox() throws Exception
-	{
-	new Action().scrollByVisibilityOfElement(driver, homeIcon);
-	new Action().JSClick(driver, checkBox);
+
+	public void clickOnCheckBox() throws Exception {
+		new Action().scrollByVisibilityOfElement(driver, homeIcon);
+		new Action().JSClick(driver, checkBox);
 	}
+
 	public PaymentPage clickOnCheckoutBtn() {
-	new Action().click(driver,checkOutBtn, "//button/span[contains(text(),'Proceed to checkout')]");
-	return new PaymentPage();
+		new Action().click(driver, checkOutBtn, "//button/span[contains(text(),'Proceed to checkout')]");
+		return new PaymentPage();
 	}
 
-
-	
 }

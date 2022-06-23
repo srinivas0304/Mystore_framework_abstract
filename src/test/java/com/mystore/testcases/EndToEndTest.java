@@ -34,17 +34,6 @@ public class EndToEndTest extends BaseClass
 	OrderConfirmationPage orderConfirmationPage;
 	
 	
-	
-	@BeforeMethod(groups = {"Smoke","Sanity","Regression"})
-	public void setup()
-	{
-		launchBrowser();
-	}
-	@AfterMethod(groups = {"Smoke","Sanity","Regression"})
-	public void tearDown()
-	{
-		driver.quit();
-	}
 	@Test(groups = "Regression")
 	public void endToEndTest() throws Throwable
 	{

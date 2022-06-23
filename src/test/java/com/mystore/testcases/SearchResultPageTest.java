@@ -15,19 +15,6 @@ public class SearchResultPageTest extends BaseClass
 	IndexPage indexPage;
 	SearchResultPage searchResult;
 	
-	
-	@BeforeMethod(groups = {"Smoke","Sanity","Regression"})
-	public void setup()
-	{
-		launchBrowser();
-	}
-	
-	@AfterMethod(groups = {"Smoke","Sanity","Regression"})
-	public void tearDown()
-	{
-		driver.quit();
-	}
-	
 	@Test(groups = "Smoke")
 	public void productAvalabiltyTest() throws Exception
 	{

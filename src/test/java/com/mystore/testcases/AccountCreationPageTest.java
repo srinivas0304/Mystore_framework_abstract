@@ -17,18 +17,6 @@ public class AccountCreationPageTest extends BaseClass
 	LoginPage loginPage;
 	AccountCreationPage acp;
 	
-	@BeforeMethod(groups = {"Smoke","Sanity","Regression"})
-	public void setup()
-	{
-		launchBrowser();
-	}
-	
-	@AfterMethod(groups = {"Smoke","Sanity","Regression"})
-	public void tearDown()
-	{
-		driver.quit();
-	}
-	
 	@Test(groups = "Sanity")
 	public void verifyAccountPageTest()
 	{
