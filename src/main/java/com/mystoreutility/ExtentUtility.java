@@ -1,16 +1,9 @@
 package com.mystoreutility;
 
 import java.io.File;
-
-import org.openqa.selenium.WebDriver;
-import org.testng.ITestResult;
-
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.Status;
-import com.aventstack.extentreports.markuputils.Markup;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
-import com.captureScreenshot.Screenshot;
 import com.mystore.base.BaseClass;
 
 public class ExtentUtility extends BaseClass
@@ -22,8 +15,8 @@ public class ExtentUtility extends BaseClass
 	public static void extentUtility()
 	{
 		extent=new ExtentReports();
-		File path=new File("Mystoretestcasefail.html");
-		ExtentSparkReporter sparkReport=new ExtentSparkReporter("./SparkReports/Mystoretestcasefail.html");
+		File path=new File("MystoretestcasePass.html");
+		ExtentSparkReporter sparkReport=new ExtentSparkReporter("./SparkReports/"+path);
 		extent.attachReporter(sparkReport);
 	}
 	public static void flushMethod()

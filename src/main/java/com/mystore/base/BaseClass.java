@@ -8,6 +8,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Properties;
 import org.apache.commons.io.FileUtils;
+import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -39,6 +40,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseClass 
 {
+	
 	Action action=new Action();
 	public static Properties prop;
 	public static WebDriver driver;	
@@ -46,9 +48,7 @@ public class BaseClass
 	@BeforeSuite(groups = {"Smoke","Sanity","Regression"})
 	public void beforeSuit()
 	{
-		
-		ExtentUtility.extentUtility();
-		
+		ExtentUtility.extentUtility();	
 	}
 	@AfterSuite(groups = {"Smoke","Sanity","Regression"})
 	public void afterSuit()

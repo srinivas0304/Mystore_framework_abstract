@@ -21,7 +21,7 @@ public class Screenshot
 		return destination.getAbsolutePath();
 	}
 
-	public static String getCurrenTime() 
+	public static String getCurrenTime()
 	{
 		String currentDate = new SimpleDateFormat("yyyy-MM-dd-hhmmss").format(new Date());
 		return currentDate;
